@@ -1,0 +1,84 @@
+html {
+    overflow-x: hidden;
+}
+.navbar {
+    padding: 20px;
+  background-color: #8297AC ;
+}
+
+
+.place {
+    color: aliceblue ;
+    font-size: 20px;
+}
+.place:hover {
+        color: #222;
+        -webkit-transition: all .5s ease 0s;
+        cursor: pointer ;
+
+}
+
+.title {
+    font-size:4vw ;
+    color: white ;
+    margin: auto ;
+}
+
+
+header {
+    background-color: #1b8af3 ;
+}
+
+navbar {
+    background-color: #8297AC ;
+}
+
+
+.technicien-btn {
+    display: inline-block;
+    background: #fff;
+    padding: 20px 64px;
+    border-radius: 3px;
+    margin: 0 10px;
+    font: 900 14px/14px 'Roboto', sans-serif;
+    color: #222;
+}
+
+.technicien-btns {
+     margin: 0 auto;
+}
+
+.services {
+    background-color: #ebebeb ;
+}
+
+.service {
+    margin-left: 1vw; 
+    margin-right: 1vw ;
+    margin-top: 10vh ;
+    padding: 5vw;
+    background-color: white ;
+    
+}
+
+.service:hover {
+    color: white !important ;
+    background-color: #1b8af3 ;
+    cursor: pointer ;
+    transform:scale(1.05);
+    -webkit-transition: all .5s ease 0s;
+}
+
+
+
+
+.service-img {
+    margin-bottom:2vh;
+}
+
+.navbar-brand{
+    font-size: 40px !important;
+    color : #1b8af3 !important ;
+    
+}
+

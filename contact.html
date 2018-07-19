@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ijeni service</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><span style="text-shadow: black 1px 2px;">IJENI</span> Service</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Ijeni Service</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> 55 Rue Khamsa Wkhmiss </li>
+          <li><i class="fa fa-phone"></i> (+216) 55 555 555</li>
+          <li><i class="fa fa-envelope"></i> contact.ijeni@ijeni.com</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Your Offer</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Company </label>
+            <input type="text" name="company" id="company" placeholder="Freelancer or You work in company" required>
+          </p>
+          <p>
+            <label>Location</label>
+            <select name="locationn" id="locationn" required>
+              <option value="Mahdia">Mahdia</option>
+              <option value="Sousse">Sousse</option>
+              <option value="Monastir">Monastir</option>
+              <option value="Nabeul">Nabeul</option>
+              <option value="Tunis">Tunis</option>
+              <option value="Sfax">Sfax</option>
+                             
+            </select>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone" required>
+          </p>
+          <p>
+            <label> Speciality</label>
+            <select name="speciality" id="speciality" required>
+              <option value="Plumber">Plumber</option>
+              <option value="Air Conditioning">Air Conditioning</option>
+              <option value="Gardener">Gardener</option>
+              <option value="Chef">Chef</option>
+              <option value="Carpenter">Carpenter</option>
+              <option value="Assembly">Assembly</option>
+              <option value="Babysitting">Babysitting</option>
+              <option value="Housekeeping">Housekeeping</option>
+              <option value="TV Fixing">TV Fixing</option>                            
+            </select>
+          </p>
+          <p>
+            <label>Desired wage (dt)</label>
+              <select name="wage" id="wage" required>
+              <option value="5-10">between 5-10</option>
+              <option value="10-20">between 10-20</option>
+              <option value="20-30">between 20-30</option>
+              <option value="30-40">between 30-40</option>
+              <option value="40-50">between 40-50</option>
+              <option value="50-60">between 50-60</option>
+            </select>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+
+        </form>
+      </div>
+    </div>
+  </div>
+	
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
