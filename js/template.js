@@ -1,6 +1,8 @@
 
 let serviceLocation;
 let service ;
+// how many specialty found
+let found = 0 ;
 
 
 const images = { Plumber: 'http://jobinn.crunchpress.com/wp-content/uploads/2016/03/categories-icon-4.png'
@@ -79,10 +81,21 @@ var messagesRef = firebase.database().ref('messages');
           +'</div>'  ;
 
 if (speciality === service && locationn === serviceLocation)
-    document.getElementById("contenu").appendChild(e);
+  { document.getElementById("contenu").appendChild(e);
+  found++ ;
+  }
+
+
 
 
 	}
+
+if (found===0){
+     var el=document.createElement("div");
+     el.innerHTML= '<div class="alert alert-danger p-5 text-center "> No ' +service + ' yet  in  ' + serviceLocation + ' </div>' ;
+     document.getElementById("contenu").appendChild(el);
+   }
+
 
   document.getElementById("loading").style.display ="none";
   }
