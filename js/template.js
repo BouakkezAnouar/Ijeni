@@ -3,6 +3,15 @@ let serviceLocation;
 let service ;
 
 
+const images = { Plumber: 'http://jobinn.crunchpress.com/wp-content/uploads/2016/03/categories-icon-4.png'
+                  , Assembly: 'https://image.flaticon.com/icons/png/512/206/206865.png'
+                  , Chef : 'https://image.flaticon.com/icons/png/512/206/206898.png'
+                  , BabySitting : 'https://image.flaticon.com/icons/png/128/194/194938.png'
+                  , Carpenter : 'https://image.flaticon.com/icons/png/128/320/320365.png'
+                  , Delivery : 'https://image.flaticon.com/icons/png/512/237/237198.png'
+                  , Gardener : 'https://image.flaticon.com/icons/png/512/1005/1005031.png'
+                  ,  TVFixing : 'http://jobinn.crunchpress.com/wp-content/uploads/2016/03/categories-icon-3.png'};
+
 service = localStorage.getItem("service").toString().trim();
 serviceLocation = localStorage.getItem("serviceLocation").toString().trim();
 
@@ -48,7 +57,7 @@ var messagesRef = firebase.database().ref('messages');
          '<div  class="job card mb-3 wow zoomIn" style="visibility: visible; animation-name: zoomIn;"> '
               +'<div  class="job-top row flex pt-4">'
                   + '<div  class="col-lg-2 col-md-2 col-s-1 col-xs-1">'
-                       + '<img  class="job-img ml-4" width="68" height="68" src="http://jobinn.crunchpress.com/wp-content/uploads/2016/03/categories-icon-4.png" alt="">'
+                       + '<img  class="job-img ml-4" width="68" height="68" src="'+  images [service] + '" alt="">'
                   + '</div>  '
                    + '<div  class="job-title-desc col-7">'
                        + '<h2  class="job-title">' + name + '</h2>'
