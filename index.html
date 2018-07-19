@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
@@ -13,7 +13,7 @@
 
     <title>Ijeni !</title>
   </head>
-    
+
   <body>
       <nav  class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Ijeni</a>
@@ -68,7 +68,7 @@
           <div class="container">
               <div class="row  align-items-center justify-content-center p-5">
                     <a href="contact.html" class="btn btn-info btn-lg technicien-btn wow bounceInLeft">
-                        <span class="glyphicon glyphicon-sunglasses "></span> I'm a technician  
+                        <span class="glyphicon glyphicon-sunglasses "></span> I'm a technician
                     </a>
                   <a href="#here" class="btn btn-info btn-lg technicien-btn wow bounceInRight">
                         <span class="glyphicon glyphicon-sunglasses"></span> I need a technician !
@@ -76,81 +76,81 @@
               </div>
           </div>
       </header>
-      
+
       <section class="services fluid-container" id="services">
                     <div class="row justify-content-center">
-                          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 " data-toggle="modal" data-target="#myModal" >
+                          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 choose" data-toggle="modal" data-target="#myModal" id="Plumber" onclick="chooseService(this.id)" >
                                <div class="service text-center wow fadeInDown">
                                     <img class="service-img" width="68" height="68" src="http://jobinn.crunchpress.com/wp-content/uploads/2016/03/categories-icon-4.png" class="" alt="">
                                     <h5 class="service-title">Plumber</h5>
                                     <span class="service-nb">10 Jobs</span>
-                              </div> 
+                              </div>
                          </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 " data-toggle="modal" data-target="#myModal">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 choose" data-toggle="modal" data-target="#myModal" id="Assembly" onclick="chooseService(this.id)" >
                                <div class="service text-center wow fadeInDown">
                                   <img class="service-img" src="https://image.flaticon.com/icons/png/512/206/206865.png" srcset="https://image.flaticon.com/icons/png/512/206/206865.png 4x" alt="Farmer" title="Farmer" width="68" height="68">
                                     <h5 class="service-title">Assembly</h5>
                                     <span class="service-nb">10 Jobs</span>
-                              </div> 
+                              </div>
                          </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 " data-toggle="modal" data-target="#myModal" >
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 choose" data-toggle="modal" data-target="#myModal"  id="Chef" onclick="chooseService(this.id)">
                                <div class="service text-center wow fadeInDown">
                                     <img class="service-img" src="https://image.flaticon.com/icons/png/512/206/206898.png" srcset="https://image.flaticon.com/icons/png/512/206/206898.png 4x" alt="Chef" title="Chef" width="68" height="68">
                                     <h5 class="service-title">Chef</h5>
                                     <span class="service-nb">8 Jobs</span>
-                              </div> 
+                              </div>
                          </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 "  data-toggle="modal" data-target="#myModal">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 choose"  data-toggle="modal" data-target="#myModal" id="BabySitting" onclick="chooseService(this.id)">
                                <div class="service text-center wow fadeInDown">
                                    <img class="service-img" src="https://image.flaticon.com/icons/png/128/194/194938.png" srcset="https://image.flaticon.com/icons/png/512/194/194938.png 4x" alt="Avatar" title="Avatar" width="68" height="68">
                                     <h5 class="service-title">Baby Sitting</h5>
                                     <span class="service-nb">12 Jobs</span>
-                              </div> 
+                              </div>
                          </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 " data-toggle="modal" data-target="#myModal" id="here">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 choose" data-toggle="modal" data-target="#myModal" id="Carpenter" onclick="chooseService(this.id)">
                                <div class="service text-center wow fadeInDown">
                                    <img class="service-img" src="https://image.flaticon.com/icons/png/128/320/320365.png" srcset="https://image.flaticon.com/icons/png/512/320/320365.png 4x" alt="Carpenter" title="Carpenter" width="68" height="68">
                                     <h5 class="service-title">Carpenter</h5>
                                     <span class="service-nb">10 Jobs</span>
-                              </div> 
+                              </div>
                          </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 " data-toggle="modal" data-target="#myModal" >
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 choose" data-toggle="modal" data-target="#myModal" id="Delivery" onclick="chooseService(this.id)">
                                <div class="service text-center wow fadeInDown">
                                    <img class="service-img" src="https://image.flaticon.com/icons/png/512/237/237198.png" srcset="https://image.flaticon.com/icons/png/512/237/237198.png 4x" alt="Delivery man" title="Delivery man" width="68" height="68">
                                     <h5 class="service-title">Delivery</h5>
                                     <span class="service-nb">7 Jobs</span>
-                              </div> 
+                              </div>
                          </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 " data-toggle="modal" data-target="#myModal">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 choose" data-toggle="modal" data-target="#myModal" id="Gardener" onclick="chooseService(this.id)">
                                <div class="service text-center wow fadeInDown">
                                     <img src="https://image.flaticon.com/icons/png/512/1005/1005031.png" srcset="https://image.flaticon.com/icons/png/512/1005/1005031.png 4x" alt="Checker" title="Checker" width="68" height="68" class="service-img">
                                     <h5 class="service-title">Gardner</h5>
                                     <h5 class="service-nb">10 Jobs</h5>
-                              </div> 
+                              </div>
                          </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 " data-toggle="modal" data-target="#myModal">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 choose" data-toggle="modal" data-target="#myModal" id="TVFixing" onclick="chooseService(this.id)">
                                <div class="service text-center wow fadeInDown">
                                     <img width="68" height="68" src="http://jobinn.crunchpress.com/wp-content/uploads/2016/03/categories-icon-3.png" class="service-img" alt="">
                                     <h5 class="service-title">TV Fixing</h5>
                                     <h6 class="service-nb">10 Jobs</h6>
-                              </div> 
+                              </div>
                          </div>
-                         
-                        
-                        
+
+
+
                     </div>
-          
+
       </section>
-     
-    
-      
-  
-      
-      
+
+
+
+
+
+
        <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
+
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -165,49 +165,34 @@
               <option value="Nabeul">Nabeul</option>
               <option value="Tunis">Tunis</option>
               <option value="Sfax">Sfax</option>
-                             
+
             </select>
         </div>
         <div class="modal-footer">
-          <button class="choose" id="choose" onclick="choose()">Choose</button>
+          <button class="choose" id="choose" onclick="chooseLocation()">Choose</button>
         </div>
       </div>
-      
+
     </div>
   </div>
-      
-      
-      
-      
-      
-      <script>
-            function choose(){
-                var sel = document.getElementById('locationn');
-                var opt = sel.options[sel.selectedIndex].value ;
-                window.location.href = opt +'.html';
-            }
-      </script>
-      
-      
-      
-      
-      
-      
-      
-      
-      
+
+
+
+
+
+        <script src="js/choose.js"></script>
         <script src="js/wow.min.js"></script>
         <script>
               new WOW().init();
         </script>
-      
-      
-      
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-  
+
   </body>
 </html>

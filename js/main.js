@@ -1,13 +1,13 @@
- // Initialize Firebase
-  var config = {
-    apiKey: "put there you api key ",
-    authDomain: "put there you  authDomain ",
-    databaseURL: "put there you  databaseURL ",
-    projectId: "put there you  projectId ",
-    storageBucket: "put there you storageBucket ",
-    messagingSenderId: "put there you messagingSenderId "
-  };
-  firebase.initializeApp(config);
+// Initialize Firebase
+ var config = {
+   apiKey: "AIzaSyA10pp-9zoJsUCzsMBxGIIb5Z04y_3_yRk",
+   authDomain: "ijeni7890.firebaseapp.com",
+   databaseURL: "https://ijeni7890.firebaseio.com",
+   projectId: "ijeni7890",
+   storageBucket: "ijeni7890.appspot.com",
+   messagingSenderId: "534304875634"
+ };
+ firebase.initializeApp(config);
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
@@ -41,7 +41,7 @@ function submitForm(e){
 
   // Clear form
   document.getElementById('contactForm').reset();
-      
+
 }
 
 // Function to get get form values
@@ -60,16 +60,16 @@ function saveMessage(name, company, locationn, phone,  speciality, wage){
     speciality:speciality,
     wage:wage,
   });
-  
+
   }
 
-  
+
   function getJson(){
-	 
+
 	  messagesRef.on('value' , gotData , errData);
   }
 
-  
+
   function gotData (data){
 	var messages = data.val();
 	var keys = Object.keys(messages);
@@ -80,7 +80,7 @@ function saveMessage(name, company, locationn, phone,  speciality, wage){
 		console.log(phone);
 	}
   }
-  
+
   function errData (err){
 	console.log(err) ;
   }

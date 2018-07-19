@@ -1,3 +1,12 @@
+
+let serviceLocation;
+let service ;
+
+
+service = localStorage.getItem("service").toString().trim();
+serviceLocation = localStorage.getItem("serviceLocation").toString().trim();
+
+
  var config = {
     apiKey: "AIzaSyA10pp-9zoJsUCzsMBxGIIb5Z04y_3_yRk",
     authDomain: "ijeni7890.firebaseapp.com",
@@ -11,12 +20,16 @@
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
 
-  
+
+    document.querySelector('.job-name').innerHTML = service + " in " + serviceLocation ;
+
+
+
   function getJson(){
 	  messagesRef.on('value' , gotData , errData);
   }
 
-  
+
   function gotData (data){
 	var messages = data.val();
 	var keys = Object.keys(messages);
@@ -32,7 +45,7 @@ var messagesRef = firebase.database().ref('messages');
 
  var e=document.createElement("div");
  e.innerHTML=
-         '<div  class="job card mb-3 wow zoomIn" style="visibility: visible; animation-name: zoomIn;"> ' 
+         '<div  class="job card mb-3 wow zoomIn" style="visibility: visible; animation-name: zoomIn;"> '
               +'<div  class="job-top row flex pt-4">'
                   + '<div  class="col-lg-2 col-md-2 col-s-1 col-xs-1">'
                        + '<img  class="job-img ml-4" width="68" height="68" src="http://jobinn.crunchpress.com/wp-content/uploads/2016/03/categories-icon-4.png" alt="">'
@@ -55,16 +68,16 @@ var messagesRef = firebase.database().ref('messages');
                +  ' </div>'
            +  '</div>'
           +'</div>'  ;
-  
-        
-    document.getElementById("contenu").appendChild(e); 
 
-        
+if (speciality === service && locationn === serviceLocation)
+    document.getElementById("contenu").appendChild(e);
+
+
 	}
 
-  document.getElementById("loading").style.display ="none"; 
+  document.getElementById("loading").style.display ="none";
   }
-  
+
   function errData (err){
 	console.log(err) ;
   }
